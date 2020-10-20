@@ -582,6 +582,7 @@ footer {
     color: #374054;
 }
 
+
 /*
     -------------------------------
     ----- 7. Education Styles -----
@@ -752,7 +753,7 @@ footer {
     }
 
     li:hover{
-        background-color: #696969;
+        background-color: $base-color-hover;
         color: white;
     }
 
