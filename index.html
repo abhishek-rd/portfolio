@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Abhishek Deshmukh</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -48,9 +48,22 @@
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Ryan Fitzgerald</h1>
-            <h2>Software Engineer</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <h1 class="ml15">
+                <span class="word">Abhishek</span>
+                <span class="word">Deshmukh</span> </h1>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                <script>
+                    anime.timeline({loop: false})
+                      .add({
+                        targets: '.ml15 .word',
+                        scale: [14,1],
+                        opacity: [0,1],
+                        easing: "easeOutCirc",
+                        duration: 800
+                      })
+                  </script>
+            <h2>Software Developer</h2>
+            <a href="files/Abhishek_DeshmukhCV.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -73,9 +86,11 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat. Donec
-                        eu vehicula neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus nunc justo, finibus
-                        ut nisl sed, euismod rhoncus nulla. Proin sed magna egestas, egestas ante et, congue eros. In consequat, mauris dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus enim non leo.
+                        I have been working as a Software Developer primarily developing software applications that provide Web based solutions to businesses with an emphasis on security controls.
+                        Most of the projects utilize agile-like development processes using Trello etc.
+                        Also have set AWS environments from the ground up for various projects. Have also been directly involved in front-end and back-end development using Reactjs PHP and Python.
+                        My day to day involves writing lambda scripts to serve API Gateways or perform various functions. I am very data centric person who follows appropraite data practices and data protection standards.
+                        
                     </p>
                 </div>
             </div>
@@ -86,29 +101,36 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="March 2020 – Present">
+                <h3>Schneider Electric</h3>
+                <h4>Data Security Project Specialist</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                    • Part of DDH-DRL Agile Team, reported directly to a Regional CISO who is also the Digital Risk Leader of Global Data Hub of
+                    Schneider Electric. <br>
+                    • Built a Data protection pipeline in AWS around the data in the company with the help of a very efficient team to make sure
+                    that the data coming into the company and being used in the company is safe, also to make sure company is compliant with
+                    GDPR.<br>
+                    • Did some of the High-Level Design (HLD) and most of the Low-Level Design (LLD) for services I worked on in the Data protection
+                    pipeline.<br>
+                    • Some of the services in the pipeline I worked on include<br>
+                    - Data X-Ray – Developed an automated process on AWS in which data is first pulled from sources such as SFTP or EC2
+                    instances then scanned according to project requirements and finally deposited at the necessary destination.<br>
+                    - Access control – Developed front-end and back-end to manage access control lists maintained on S3 buckets.<br>
+                    - Data Safeguarding Project– Developed a mechanism to remove access to sensitive files stored on cloud services post the
+                    expiry date and developed various internal APIs to service frontends as well.<br>
+                    • Technologies used: AWS Lambda, API-Gateway, AWS Glue, AWS VPC, S3, SNS, DocumentDB, XML, JSON, Bref, ReactJS,
+                    Python, PHP.<br>
+                    • Responsibilities also included testing and deploying various applications to production environments.<br>
                 </p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
+            <div data-date="May 2018 – June 2018">
+                <h3>KPIT Pvt Ltd</h3>
+                <h4>Project Trainee Intern</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
+                    Developed a model using random forest to predict attrtition rate and presented the findinds as a Power BI dashboard.</p>
             </div>
 
-            <div data-date="September 2015 – September 2016">
-                <h3>Employer Name</h3>
-                <h4>Job Title</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                </p>
-            </div>
         </div>
     </div>
     <!-- End #experience -->
@@ -116,104 +138,53 @@
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
+            <h3>Vellore Institute of Technology, Chennai</h3>
+            <span class="education-date">July 2015 - April 2019</span>
+            <h4>Bachelor of Technology in Computer Science</h4>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                • Cumulative Grade Point Average (CGPA): 8.14/10 <br>
+                • Relevant Courses: Operating Systems; Computer Architecture and organisation; Artificial Intelligence; Natural Language
+                Processing; Web Mining; Human Computer Interaction; Image Processing; Parallel and Distributed; Virtualization. <br>
+                • Final Year Thesis: “Workload Based Optimal ATC sector capacity” <br>
             </p>
         </div>
         <!-- End .education-block -->
 
         <div class="education-block">
-            <h3>University of Ottawa</h3>
-            <span class="education-date">Sept 2016 - Sept 2017</span>
-            <h4>Bachelor of Science in Computer Science</h4>
-            <ul>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-                <li>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                </li>
-            </ul>
+            <h3>University of South Australia, Australia</h3>
+            <span class="education-date">July 2019 - December 2019</span>
+            <h4>Post Graduate Certificate in Data Science</h4>
+            <p>
+            • Cumulative Grade Point Average (CGPA): 6.50/7.00 <br>
+            • Relevant Courses: Business Intelligence and Analytics; Big Data; Statistics; Statistical Programming. <br>
+            • Notable Project: “Influenza Subtype Prediction” <br>
+        </p>
         </div>
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
 
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
 
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Project Name Here</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
-                        </p>
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
+    <div id="skills" class="background-alt">
         <h2 class="heading">Skills</h2>
         <ul>
-            <li>JavaScript</li>
             <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
             <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>Go</li>
+            <li>PHP</li>
+            <li>HTML</li>
             <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>React</li>
-            <li>Elixir</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>Ruby on Rails</li>
+            <li>CSS</li>
+            <li>ReactJs</li>
+            <li>AWS Lambda</li>
+            <li>AWS Step Functions</li>
+            <li>AWS API GW</li>
+            <li>REST APIs</li>
+            <li>AWS GLUE (ETL)</li>
+            <li>SAS</li>
+            <li>R Studio</li>
+            <li>MATLAB</li>
+            <li>Tableau</li>
+            <li>Power BI</li>
         </ul>
     </div>
     <!-- End #skills -->
@@ -221,7 +192,7 @@
     <div id="contact">
         <h2>Get in Touch</h2>
         <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
+            <form method="POST" action="https://formspree.io/f/xleobeve">
                 <input type="hidden" name="_subject" value="Contact request from personal website" />
                 <input type="email" name="_replyto" placeholder="Your email" required>
                 <textarea name="message" placeholder="Your message" required></textarea>
@@ -237,7 +208,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2020 Abhishek Deshmukh
                     </p>
                 </div>
                 <div class="col-sm-2 top">
@@ -248,22 +219,10 @@
                 <div class="col-sm-5 social">
                     <ul>
                         <li>
-                            <a href="https://github.com/" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                            <a href="https://github.com/abhishek-rd" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/in/abhishek-deshmukh-960705110/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
